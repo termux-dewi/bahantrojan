@@ -1,0 +1,30 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 10000,
+      "protocol": "trojan",
+      "settings": {
+        "clients": [
+          {
+            "password": "eldaa",
+            "level": 0
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/trojan-ws"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    { "protocol": "freedom" }
+  ]
+}
